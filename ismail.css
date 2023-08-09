@@ -1,0 +1,180 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add padding to the header and footer */
+  #header, footer {
+    padding: 20px 0;
+  }
+  
+  /* Center align the navigation text */
+  .nav-txt {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* About section styles */
+  
+  a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  #about {
+    padding: 80px 0;
+  }
+  
+  .about-col1 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-col1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .about-col2 {
+    flex: 2;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .anim {
+    margin-top: 20px;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .about-col1 {
+      text-align: center;
+    }
+  
+    .about-col1 img {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+  
+  
+  .anim {
+    margin-top: 20px;
+  }
+  
+  /* Services section styles */
+  #services {
+    padding: 80px 0;
+  }
+  
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .services-list div {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Portfolio section styles */
+  #portfolio {
+    padding: 80px 0;
+  }
+  
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .work {
+    position: relative;
+  }
+  
+  .work img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .work:hover .layer {
+    opacity: 1;
+  }
+  
+  #contact {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  /* Social button styles */
+  .socialbtn {
+    text-align: center;
+    font-size: 35px;
+    -webkit-text-fill-color: #fff;
+  }
+  .fa-brands:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+  
+  .socialbtn a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #333;
+  }*
+  
+  /* Footer styles */
+  footer {
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
